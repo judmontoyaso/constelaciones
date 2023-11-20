@@ -13,11 +13,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="flex flex-row w-full">
-          <div className="flex w-3/12 h-screen justify-center items-center">
+        <div className="flex flex-row w-full bg-my-image bg-cover h-screen">
+          <div className="flex w-3/12 justify-center items-center bg-white bg-opacity-50 text-black">
             Constelaciones
           </div>
-          <div className="flex w-9/12 flex-col">
+          <div className="flex w-9/12 flex-col bg-black bg-opacity-50">
             <div>
               <Navbar></Navbar>
             </div>
