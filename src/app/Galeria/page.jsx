@@ -1,15 +1,17 @@
-import React from "react";
+"use client";
 import Titulo from "../Components/Titulo";
+import React, { useState } from "react";
+import { AiOutlineExpandAlt } from "react-icons/ai";
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import "yet-another-react-lightbox/styles.css";
+import Galeria from "../Components/Galeria";
 
-export default function Home () {
+export default function Home() {
   return (
-    <main className="flex  flex-col items-center justify-center p-24">
-   <Titulo titulo={"Galeria"}></Titulo>
-   <div className="z-10  w-full items-center justify-between font-mono text-sm lg:flex">
-        Enfocado en maximizar la experiencia del cliente y la facilidad de uso a
-        través de la implementación de tecnologías líderes en la industria que
-        nos permiten crear y mantener aplicaciones personalizadas.
-      </div>
+    <main className="flex  flex-col items-center justify-center p-24 w-full">
+      <Titulo titulo={"Galeria"}></Titulo>
+      <Galeria></Galeria>
     </main>
   );
-};
+}
