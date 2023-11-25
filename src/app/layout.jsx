@@ -1,8 +1,8 @@
-import { Inter } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/NavBar";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Poppins({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
   title: "Constelaciones",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
             <div>
               <Navbar></Navbar>
             </div>
-            {children}
+            <div className="flex  justify-center h-max">{children}</div>
           </div>
         </div>
       </body>
