@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Layout from "./Layout";
 import Titulo from "./Components/Titulo";
 
 export default function Home() {

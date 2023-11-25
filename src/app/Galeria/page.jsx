@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../Components/NavBar";
 import Titulo from "../Components/Titulo";
 
 export default function Home () {
